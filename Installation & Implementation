@@ -1,0 +1,37 @@
+Installation Process:
+Before running the code, ensure that Python and OpenCV are installed on your system.
+
+1. Install Python:
+Download and install Python from: https://www.python.org/downloads/
+
+2. Install OpenCV:
+Open your terminal or command prompt and run:
+           pip install opencv-python
+
+3. Verify Installation:
+Run Python and type:
+        import cv2
+        print(cv2.__version__)
+
+
+🔄 Implementation Process:
+Step 1: Import Libraries
+Import the cv2 module for accessing OpenCV functions.
+
+Step 2: Load Haar Cascade Classifier
+Use OpenCV’s pre-trained XML file for frontal face detection.
+
+Step 3: Start Webcam
+Access the system's default webcam using cv2.VideoCapture(0).
+
+Step 4: Process Each Frame
+Read video frames in a loop, convert them to grayscale, and apply face detection.
+
+Step 5: Detect and Highlight Faces
+Use detectMultiScale() to find faces, and draw green rectangles using cv2.rectangle().
+
+Step 6: Display Output
+Show the output using cv2.imshow() and allow exiting the program by pressing 'a'.
+
+Step 7: Release Resources
+Release the webcam and close all OpenCV windows using release() and destroyAllWindows().
